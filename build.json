@@ -1,0 +1,10 @@
+{    
+    "main" : {
+      "project" : "COBOL-PurchaseData",
+      "artefact": "PurchaseData.cpy",
+      "editor"  : "lpex"
+    },
+    "bar" : {
+        "build" : false
+    }
+  }
