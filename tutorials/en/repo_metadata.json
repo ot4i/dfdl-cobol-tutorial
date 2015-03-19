@@ -84,7 +84,7 @@
 				     ]
 	}, 
 	{
-       	        "name"          : "Modeling CSV data using DFDL",
+       	        "name"          : "Modeling CSV data by using DFDL",
                 "version"	: "1.0",
                 "iibVersions"	: "10.*-11.*",
            	"shortDesc"     : "Learn how to model CSV data by using Data Format Description Language (DFDL)",

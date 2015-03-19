@@ -120,10 +120,10 @@
 		    		<div class="small-10 medium-10 large-10 columns divider">
 					
 				      	<div class="row content-details">
-					      	<h4>Import projects</h4>
+					      	<h4>Import projects and create schema</h4>
 					        
 						    
-								<p> Click 'Import' and a shared library is imported into your workspace. </p>
+								<p> Click <span class="uicontrol">Import and a shared library is imported into your workspace. </span></p>
 								
 							
 								<p> Library <span class="library">COBOL-Purchases</span> contains a COBOL copybook called <span class="filepath">PurchaseData.cpy</span> in 'Other resources'. It defines a COBOL data structure that records the purchases made by a customer. Open the copybook and look at the COBOL structure which is called PurchaseData. The main points of interest are: </p>
@@ -170,7 +170,7 @@
 										
 										</li>
 									
-										<li> Select the first option <span class="uicontrol">Create a DFDL schema file by importing a COBOL copybook or program</span> then click <span class="uicontrol">Next</span>.
+										<li> Select the option <span class="uicontrol">Create a DFDL schema file by importing a COBOL copybook or program</span> then click <span class="uicontrol">Next</span>.
 										
 										</li>
 									
@@ -245,7 +245,7 @@
 								<p> The COBOL REDEFINES within Item has been imported as <span class="varname">xs:choice</span>. The COBOL OCCURS DEPENDING ON has resulted in the DFDL property <span class="varname">Occurs Count Kind</span> for Item being set to 'expression', and the DFDL property <span class="varname">Occurs Count</span> is a DFDL expression that refers to ItemCount. </p>
 								
 							
-								<p> You will be test parsing an example binary data file using the PurchaseData message. The test parsing takes place entirely within the DFDL editor, so there is no message flow in this tutorial and no Deploy step. Before test parsing, switch to the DFDL Test perspective by clicking <span class="uicontrol">Window &gt; Open Perspective</span> and then clicking <span class="uicontrol">DFDL Test</span>. (Alternatively, you can use the toolbar icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/changePerspective.png" alt>). </p>
+								<p> You will be test parsing an example binary data file using the PurchaseData message. The test parsing takes place entirely within the DFDL editor, so there is no message flow in this tutorial and no Deploy step. Before test parsing, switch to the <span class="uicontrol">DFDL Test</span> perspective by clicking <span class="uicontrol">Window &gt; Open Perspective</span> and then clicking <span class="uicontrol">DFDL Test</span>. (Alternatively, you can use the toolbar icon <img src="http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/changePerspective.png" alt>). </p>
 								
 							
 								<p> <b>Tip:</b> If this <span class="uicontrol">Tutorial Steps View</span> tab disappears when you switch perspectives, use the <span class="uicontrol">Window &gt; Show View</span> menu option to add it back. </p>
@@ -276,7 +276,7 @@
 					      	<h4>Follow these steps to complete the tutorial</h4>
 					        
 						    
-								<p> Schema <span class="filepath">PurchaseData.xsd</span> is open in the DFDL editor. The PurchaseData message should be highlighted in green. </p>
+								<p> The <span class="filepath">PurchaseData.xsd</span> DFDL schema is open in the DFDL editor. The PurchaseData message should be highlighted in green. </p>
 								
 							
 								<p>  </p>
@@ -297,9 +297,9 @@
 												
 													<li> In the Message section, select <span class="uicontrol">PurchaseData</span>.</li>
 												
-													<li> In the Parser Input section, select <span class="uicontrol">Content from a data file</span> and then click <span class="uicontrol">Browse</span>.</li>
+													<li> In the Parser Input section, select <span class="uicontrol">Content from a data file</span> then click <span class="uicontrol">Browse</span>.</li>
 												
-													<li> Select the <span class="filepath">PurchaseData1.bin</span> file from <span class="library">COBOL-Purchases</span> and then click <span class="uicontrol">OK</span>.</li>
+													<li> Select the <span class="filepath">PurchaseData1.bin</span> file from <span class="library">COBOL-Purchases</span> then click <span class="uicontrol">OK</span>.</li>
 												
 													<li> Set the Encoding to <span class="uicontrol">ASCII</span>.</li>
 												
@@ -367,6 +367,9 @@
 									
 									</ol>
 									
+								
+							
+								<p> The shared library can be deployed to an integration node for use by message flows. </p>
 								
 							
 						</div>
