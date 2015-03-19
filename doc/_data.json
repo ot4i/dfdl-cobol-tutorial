@@ -109,11 +109,11 @@
       "create":{
         "overview":{
           "name":"Create",
-          "heading":"Import projects",
+          "heading":"Import projects and create schema",
           "_createComment":"A description of what will happen when the user clicks Import.",
           "sections":[
             {
-              "section":"Click 'Import' and a shared library is imported into your workspace."
+              "section":"Click <span class='uicontrol'>Import</scan> and a shared library is imported into your workspace."
             },
             {
               "section":"Library <span class='library'>COBOL-Purchases</span> contains a COBOL copybook called <span class='filepath'>PurchaseData.cpy</span> in 'Other resources'. It defines a COBOL data structure that records the purchases made by a customer. Open the copybook and look at the COBOL structure which is called PurchaseData. The main points of interest are:"
@@ -135,7 +135,7 @@
               "section":"You will now create a DFDL schema to model the COBOL PurchaseData structure, using the <span class='wintitle'>New Message Model</span> wizard." 
             },
             {
-              "section":"<b>Tip:</b> Ensure that steps 1 to 6 below are all visible in the <span class='uicontrol'>Tutorial Steps View</span> before proceeding." 
+              "section":"<b>Tip:</b> Ensure that steps 1 to 7 below are all visible in the <span class='uicontrol'>Tutorial Steps View</span> before proceeding." 
             },
             {
               "steps":{
@@ -148,7 +148,7 @@
                     "details":"Select <span class='uicontrol'>COBOL</span> then click <span class='uicontrol'>Next</span>."
                   },
                   {
-                    "details":"Select the first option <span class='uicontrol'>Create a DFDL schema file by importing a COBOL copybook or program</span> then click <span class='uicontrol'>Next</span>."
+                    "details":"Select the option <span class='uicontrol'>Create a DFDL schema file by importing a COBOL copybook or program</span> then click <span class='uicontrol'>Next</span>."
                   },
                   {
                     "details":"<span class='filepath'>PurchaseData.cpy</span> should be highlighted. Click <span class='uicontrol'>Next</span>."
@@ -212,7 +212,7 @@
               "section":"The COBOL REDEFINES within Item has been imported as <span class='varname'>xs:choice</span>. The COBOL OCCURS DEPENDING ON has resulted in the DFDL property <span class='varname'>Occurs Count Kind</span> for Item being set to 'expression', and the DFDL property <span class='varname'>Occurs Count</span> is a DFDL expression that refers to ItemCount." 
             },
             {
-              "section":"You will be test parsing an example binary data file using the PurchaseData message. The test parsing takes place entirely within the DFDL editor, so there is no message flow in this tutorial and no Deploy step. Before test parsing, switch to the DFDL Test perspective by clicking <span class='uicontrol'>Window &gt; Open Perspective</span> and then clicking <span class='uicontrol'>DFDL Test</span>. (Alternatively, you can use the toolbar icon <img src='http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/changePerspective.png' alt='' />)." 
+              "section":"You will be test parsing an example binary data file using the PurchaseData message. The test parsing takes place entirely within the DFDL editor, so there is no message flow in this tutorial and no Deploy step. Before test parsing, switch to the <span class='uicontrol'>DFDL Test</span> perspective by clicking <span class='uicontrol'>Window &gt; Open Perspective</span> and then clicking <span class='uicontrol'>DFDL Test</span>. (Alternatively, you can use the toolbar icon <img src='http://ot4i.github.io/ot4i.tutorials/dist/images/icons/iib/changePerspective.png' alt='' />)." 
             },
             {
               "section":"<b>Tip:</b> If this <span class='uicontrol'>Tutorial Steps View</span> tab disappears when you switch perspectives, use the <span class='uicontrol'>Window &gt; Show View</span> menu option to add it back."
@@ -237,7 +237,7 @@
           "_runComment":"The full steps for the user to run through the tutorial. Use 'sections' to render paragraphs, 'steps' with a type of 'ordered' or 'unordered' to render HTML lists, and 'substeps' to render nested lists.",
           "sections":[
             {
-              "section":"Schema <span class='filepath'>PurchaseData.xsd</span> is open in the DFDL editor. The PurchaseData message should be highlighted in green."
+              "section":"The <span class='filepath'>PurchaseData.xsd</span> DFDL schema is open in the DFDL editor. The PurchaseData message should be highlighted in green."
             },
             {  
               "steps":{
@@ -255,10 +255,10 @@
                           "details":"In the Message section, select <span class='uicontrol'>PurchaseData</span>."
                         },
                         {
-                          "details":"In the Parser Input section, select <span class='uicontrol'>Content from a data file</span> and then click <span class='uicontrol'>Browse</span>."
+                          "details":"In the Parser Input section, select <span class='uicontrol'>Content from a data file</span> then click <span class='uicontrol'>Browse</span>."
                         },
                         {
-                          "details":"Select the <span class='filepath'>PurchaseData1.bin</span> file from <span class='library'>COBOL-Purchases</span> and then click <span class='uicontrol'>OK</span>."
+                          "details":"Select the <span class='filepath'>PurchaseData1.bin</span> file from <span class='library'>COBOL-Purchases</span> then click <span class='uicontrol'>OK</span>."
                         },
                         {
                           "details":"Set the Encoding to <span class='uicontrol'>ASCII</span>."
@@ -273,16 +273,16 @@
                     "details":"The results of the test parse are displayed. You should see the message <span class='systemoutput'>Parsing completed successfully</span>. You can dismiss this message."
                   },
                   {
-                    "details":"You can view the parsed data file in the <span class='uicontrol'>DFDL Test - Parse</span> view. The results of the parse can be viewed in the <span class='uicontrol'>DFDL Test - Logical Instance</span> view, as a tree or as XML. If you expand Invoice and then each Item, you can see that the parser has correctly resolved the xs:choice to either ItemGrocery or ItemNonGrocery."
+                    "details":"You can view the parsed data file in the <span class='uicontrol'>DFDL Test - Parse</span> view. The results of the parse can be viewed in the <span class='uicontrol'>DFDL Test - Logical Instance</span> view, as a tree or as XML. If you expand Invoice and then each Item, you can see that the parser has correctly resolved the <span class='varname'>xs:choice</span> to either ItemGrocery or ItemNonGrocery."
                   },
                   {
-                    "details":"When the parser encounters xs:choice, its default strategy is to parse the data by trying the first branch of the choice. If that fails, the parser backtracks and tries the second branch. And so on, until a branch parses successfully. In our example, the parser tries ItemGrocery first, and if that fails it backtracks and tries ItemNonGrocery."
+                    "details":"When the parser encounters a <span class='varname'>xs:choice</span>, its default strategy is to parse the data by trying the first branch of the choice. If that fails, the parser backtracks and tries the second branch. And so on, until a branch parses successfully. In our example, the parser tries ItemGrocery first, and if that fails it backtracks and tries ItemNonGrocery."
                   },
                   {
                     "details":"Open the <span class='uicontrol'>DFDL Test - Trace</span> view and scroll back through the trace entries. You will see an error message CTDP3053E saying that a zoned number conversion error occurred. At this point the parser was attempting to parse the choice by trying ItemGrocery, but the error occurred. The trace entries after that show the parser backtracking and attempting to parse the choice by trying ItemNonGrocery, which succeeded." 
                   },
                   {
-                    "details":"Sometimes the default strategy of the parser is not sufficient to resolve a choice resulting from a COBOL REDEFINES. If that is the case, DFDL provides two other features to help you - discriminators and direct dispatch. These DFDL features are covered in detail by other IBM Integration Bus tutorials." 
+                    "details":"Sometimes the default strategy of the parser is not sufficient to resolve a <span class='varname'>xs:choice</span> resulting from a COBOL REDEFINES. If that is the case, DFDL provides two other features to help you - discriminators and direct dispatch. These DFDL features are covered in detail by other IBM Integration Bus tutorials." 
                   },
                   {
                     "details":"Test serialize the logical instance that resulted from the parse:",
@@ -315,7 +315,10 @@
                   }  
                 ]
               }
-            }
+            },
+            {
+              "section":"The shared library can be deployed to an integration node for use by message flows."
+            } 
           ]
         },
         "helpLinks":{
