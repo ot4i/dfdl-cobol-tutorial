@@ -113,7 +113,7 @@
           "_createComment":"A description of what will happen when the user clicks Import.",
           "sections":[
             {
-              "section":"Click <span class='uicontrol'>Import</scan> and a shared library is imported into your workspace."
+              "section":"Click <span class='uicontrol'>Import</span> and a shared library is imported into your workspace."
             },
             {
               "section":"Library <span class='library'>COBOL-Purchases</span> contains a COBOL copybook called <span class='filepath'>PurchaseData.cpy</span> in 'Other resources'. It defines a COBOL data structure that records the purchases made by a customer. Open the copybook and look at the COBOL structure which is called PurchaseData. The main points of interest are:"
@@ -166,7 +166,7 @@
               }
             }, 
             {
-              "section":"Two DFDL schemas are created in the library. Schema <span class='filepath'>PurchaseData.xsd</span> models the overall COBOL data structure. Schema <span class='filepath'>CobolDataDefinitionFormat.xsd</span> defines suitable default values for DFDL properties. The imported copybook is copied into the importFile folder and a report is created in the log folder."
+              "section":"Two DFDL schemas are created in the library. The <span class='filepath'>PurchaseData.xsd</span> schema models the overall COBOL data structure. The <span class='filepath'>CobolDataDefinitionFormat.xsd</span> schema defines suitable default values for DFDL properties. The imported copybook is copied into the importFile folder and a report is created in the log folder."
             }  
            ]
         },
@@ -264,7 +264,7 @@
                           "details":"Set the Encoding to <span class='uicontrol'>ASCII</span>."
                         },
                         {
-                          "details":"Click <span class='uicontrol'>OK</span>. If asked to confirm switching to the DFDL Test perspective, click <span class='uicontrol'>Yes</span>."
+                          "details":"Click <span class='uicontrol'>OK</span>. If asked to confirm switching to the <span class='uicontrol'>DFDL Test</span> perspective, click <span class='uicontrol'>Yes</span>."
                         }
                       ]
                     }
