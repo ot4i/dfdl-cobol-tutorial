@@ -1,5 +1,5 @@
 {
-  "version":"0.5",
+  "version":"0.6",
     "pageContent": 
 	{
         "_comments": "JSON object that contains data for page labels, buttons, etc.",
@@ -18,12 +18,20 @@
                     "name": "Start Tutorial",
 					"method": "startTutorialFromDetailsScreen()",
 					"idName": "startTutorial"
+                },
+	        "buttonViewDetails":
+                                {
+                    "name": "View Details",
+                                        "method": "viewDetails()",
+                                        "idName": "stepsViewDetails"	
                 }
             }
         }
     },
-  "tutorial":{
-    "_common":{
+  "tutorial":
+        {
+    "_common":
+            {
       "name":"Modeling COBOL data by using DFDL",
       "shortDescription":"Learn how to model COBOL data by using Data Format Description Language (DFDL).",
       "durationText":"This tutorial takes approximately",
@@ -36,7 +44,8 @@
            "link": "/com.ibm.etools.msgbroker.helphome.doc/help_home_msgbroker.htm"
         }
     },
-    "pageDetails":{
+    "pageDetails":
+        {
       "topicsName":"Tutorial Topics",
       "_topicListComment":"A short list of product concepts or tasks demonstrated by this tutorial",
       "topicList":[
@@ -63,17 +72,7 @@
         "sections":[
           {
             "section":"This tutorial demonstrates how to model COBOL data by using DFDL schema."
-          }  
-        ]
-      }
-    },
-    "pageSteps":{
-      "concept":{
-        "overview":{
-          "name":"Overview",
-          "heading":"Overview",
-          "_overviewComment":"A short description of what this tutorial does, and what the user will do to run the tutorial.",
-        "sections":[
+          },  
           {
             "section":"COBOL is a programming language most commonly used on mainframe computers. In-memory COBOL data structures are defined either in COBOL programs or COBOL copybooks. These data structures are commonly written to files or message queues."
           },
@@ -83,29 +82,10 @@
           {
             "section":"The DFDL editor provides a COBOL importer which can read COBOL copybooks and programs and generate the equivalent DFDL schema."
           }
-          ]
-        },
-        "helpLinks":{
-          "title":"Find out more",
-          "details":[
-            {
-              "title":"Knowledge Center link to ",
-              "description":"Message modeling overview",
-              "link":"com.ibm.etools.mft.doc/bd40430_.htm"
-            },
-            {
-              "title":"Knowledge Center link to ",
-              "description":"How to model data with DFDL",
-              "link":"com.ibm.etools.mft.doc/df20125_.htm"
-            },
-            {
-              "title":"Knowledge Center link to ",
-              "description":"Working with COBOL data",
-              "link":"com.ibm.etools.mft.doc/bd22930_.htm"
-            }
-          ]
-        }
-      },
+        ]
+      }
+    },
+    "pageSteps":{
       "create":{
         "overview":{
           "name":"Create",
@@ -175,8 +155,18 @@
           "details":[
             {
               "title":"Knowledge Center link to ",
-              "description":"Working with DFDL schema files",
-              "link":"com.ibm.etools.mft.doc/df20061_.htm"
+              "description":"Message modeling overview",
+              "link":"com.ibm.etools.mft.doc/bd40430_.htm"
+            },
+            {
+              "title":"Knowledge Center link to ",
+              "description":"How to model data with DFDL",
+              "link":"com.ibm.etools.mft.doc/df20125_.htm"
+            },
+            {
+              "title":"Knowledge Center link to ",
+              "description":"Working with COBOL data",
+              "link":"com.ibm.etools.mft.doc/bd22930_.htm"
             }
           ]
         },
