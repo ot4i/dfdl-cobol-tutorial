@@ -83,7 +83,27 @@
             "section":"The DFDL editor provides a COBOL importer which can read COBOL copybooks and programs and generate the equivalent DFDL schema."
           }
         ]
-      }
+      },
+        "helpLinks":{
+          "title":"Find out more",
+          "details":[
+            {
+              "title":"Knowledge Center link to ",
+              "description":"Message modeling overview",
+              "link":"com.ibm.etools.mft.doc/bd40430_.htm"
+            },
+            {
+              "title":"Knowledge Center link to ",
+              "description":"How to model data with DFDL",
+              "link":"com.ibm.etools.mft.doc/df20125_.htm"
+            },
+            {
+              "title":"Knowledge Center link to ",
+              "description":"Working with COBOL data",
+              "link":"com.ibm.etools.mft.doc/bd22930_.htm"
+            }
+          ]
+        }
     },
     "pageSteps":{
       "create":{
@@ -155,18 +175,8 @@
           "details":[
             {
               "title":"Knowledge Center link to ",
-              "description":"Message modeling overview",
-              "link":"com.ibm.etools.mft.doc/bd40430_.htm"
-            },
-            {
-              "title":"Knowledge Center link to ",
-              "description":"How to model data with DFDL",
-              "link":"com.ibm.etools.mft.doc/df20125_.htm"
-            },
-            {
-              "title":"Knowledge Center link to ",
-              "description":"Working with COBOL data",
-              "link":"com.ibm.etools.mft.doc/bd22930_.htm"
+              "description":"Working with DFDL schema files",
+              "link":"com.ibm.etools.mft.doc/df20061_.htm"
             }
           ]
         },
