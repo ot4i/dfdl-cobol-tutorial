@@ -163,7 +163,7 @@
                     "details":"Here you can choose settings for DFDL properties such as default values, null values and padding characters. Leave the options to default and click <span class='uicontrol'>Next</span>."
                   },
                   {
-                    "details":"Here you can choose platform dependent settings such as encoding and zoned decimal sign representation. Leave the options to default and click <span class='uicontrol'>Next</span>."
+                    "details":"Here you can choose platform dependent settings such as encoding and zoned decimal sign representation. Leave the options to default and click <span class='uicontrol'>Finish</span>."
                   }
                 ]
               }
